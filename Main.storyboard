@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InstaGrid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Out-Q1-PIn">
+                                <rect key="frame" x="95.666666666666686" y="708" width="184" height="70"/>
+                                <color key="backgroundColor" red="0.22594208617407033" green="0.71575342465753422" blue="0.11406728527908649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Out-Q1-PIn" secondAttribute="height" multiplier="92:35" id="oDB-g4-Fy9"/>
+                                    <constraint firstAttribute="width" constant="184" id="wBt-JJ-I8s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                <state key="normal" title="Photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cLv-aj-gO7"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1b5-Xt-jx8">
+                                <rect key="frame" x="16" y="106" width="343" height="347"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1b5-Xt-jx8" secondAttribute="height" multiplier="343:347" id="p4u-pG-0xD"/>
+                                    <constraint firstAttribute="width" constant="343" id="uyc-9F-Zkv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8943385942528802" green="0.97088997990761294" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1b5-Xt-jx8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0TX-9E-vhZ"/>
+                            <constraint firstItem="Out-Q1-PIn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EBa-gC-42u"/>
+                            <constraint firstItem="Out-Q1-PIn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="EZh-aG-Khy"/>
+                            <constraint firstItem="Out-Q1-PIn" firstAttribute="top" secondItem="1b5-Xt-jx8" secondAttribute="bottom" constant="255" id="fgz-ob-Ngw"/>
+                            <constraint firstItem="1b5-Xt-jx8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l0T-yZ-Od0"/>
+                            <constraint firstItem="1b5-Xt-jx8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="qPy-7p-f6d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1b5-Xt-jx8" secondAttribute="trailing" constant="16" id="scC-XV-tTq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="1b5-Xt-jx8" id="08I-3X-b6q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
+        </scene>
+    </scenes>
+</document>
